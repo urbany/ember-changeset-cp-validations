@@ -3,7 +3,7 @@
 var VersionChecker = require('ember-cli-version-checker');
 
 module.exports = {
-  name: 'ember-changeset-cp-validations',
+  name: require('./package').name,
 
   init: function() {
     if (this._super.init) { this._super.init.apply(this, arguments); }

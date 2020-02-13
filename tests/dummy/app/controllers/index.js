@@ -1,13 +1,12 @@
 import Controller from '@ember/controller';
+import { action } from '@ember/object';
 
-export default Controller.extend({
-  actions: {
-    submit(changeset) {
-      return changeset.save();
-    },
-
-    rollback(changeset) {
-      return changeset.rollback();
-    }
+export default class IndexController extends Controller {
+  @action submit(changeset) {
+    return changeset.save();
   }
-});
+
+  @action rollback(changeset) {
+    return changeset.rollback();
+  }
+}

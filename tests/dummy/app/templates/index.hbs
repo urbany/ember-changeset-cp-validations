@@ -1,4 +1,5 @@
-{{user-form
-  model=model
-  submit=(action "submit")
-  rollback=(action "rollback")}}
+<UserForm
+  @model={{@model}}
+  @submit={{this.submit}}
+  @rollback={{this.rollback}}
+/>
